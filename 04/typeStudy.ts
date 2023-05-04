@@ -9,3 +9,18 @@ type Writing = {
 };
 
 type ComicBook = Artwork & Writing;
+
+type grapicNorvel = { name: string } & (
+  | { author: string; genre: "action" }
+  | { nationality: string; genre: "romance" }
+);
+
+const superHero: grapicNorvel = {
+  name: "spiderman",
+  author: "stanLee",
+  genre: "action",
+};
+
+type NotPossible = number & string; // 타입 never
+// let notNumber: NotPossible = 1;
+// let notString: NotPossible = "ggg";
