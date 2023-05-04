@@ -6,6 +6,14 @@ type WithLastName = {
   lastName: string;
 };
 
+type name = {
+  firstName?: string;
+  lastName: string;
+};
+
+let myName: name = {
+  lastName: "ha",
+};
 const hasBoth = {
   firstName: "hj",
   lastName: "ha",
