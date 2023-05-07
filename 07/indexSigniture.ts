@@ -12,6 +12,10 @@ interface Writing {
   page: number;
 }
 
+// interface WritingOveride extends Writing{
+//     page : number | null;
+// }
+
 interface ComicBook extends Writing {
   image: string;
 }
